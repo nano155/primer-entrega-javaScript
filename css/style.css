@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Gloria+Hallelujah&family=Open+Sans:wght@300&display=swap");
+header nav {
+  background-color: white;
+  display: flex;
+  padding: 8px;
+  padding-inline: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo {
+  width: 190px;
+  height: 80px;
+  background-size: cover;
+  background-image: url("../img/logo.jpeg");
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+header nav ul li {
+  font-family: "Bitter", serif;
+  font-size: 1.5rem;
+}
+header nav #carrito {
+  margin-left: 120px;
+}
+
+main #carrusel {
+  background-color: #fcdbaf;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+}
+main #carrusel div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main #carrusel div h2 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 3rem;
+}
+main #carrusel div h1 {
+  font-family: "Bitter", serif;
+  font-size: 3rem;
+}
+main #carrusel div article {
+  font-family: "Bitter", serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+main #carrusel div article img {
+  padding-right: 10px;
+}
+main #carrusel div article div {
+  padding-left: 20px;
+}
+main #carrusel div article div p {
+  padding-top: 30px;
+  padding-left: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
