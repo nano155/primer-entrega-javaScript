@@ -4,6 +4,7 @@ main{
         display: flex;
         flex-direction: row;
         padding: 5rem;
+        flex-wrap: wrap;
         div{
             display: flex;
             flex-direction: column;
