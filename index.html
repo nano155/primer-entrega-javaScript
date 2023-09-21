@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>giftmakers</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Gloria+Hallelujah&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="contenido">
         <div class="logo">
         </div>
         <ul class="nav">
@@ -26,26 +27,101 @@
     </header>
     <main>
         <section id="carrusel">
-            <div>
-                <h2>Delicioso</h2>
-                <h1>PASTEL DE VAINILLA</h1>
-                <article>
-                    <img src="./img/pngegg.png" width="100" height="100" alt="">
-                    <div>
-                        <h3>ESPONJOSO</h3>
-                        <p>Un manjar apetecible, para los amantes del deleite del paladar.</p>
-                    </div>
-                    </article>
-                </div>
-            <aside>
-                <img src="./img/pastel.png" width="400" height="400" alt="">
+          <div class="contenido contenedor-carrusel">
+            <div id="texto-titulo">
+              <h2>Delicioso</h2>
+              <h1>PASTEL DE VAINILLA</h1>
+              <article id="imagen-descripcion">
+                  <img src="./img/pngegg.png" alt="">
+                  <div id="descripcion">
+                      <h3>ESPONJOSO</h3>
+                      <p>Un manjar apetecible, para los amantes del deleite del paladar.</p>
+                  </div>
+                  </article>
+              </div>
+              <aside>
+                <img src="./img/pastel.png" alt="">
             </aside>
+          </div>
         </section>
-        <section id="grid-productos">
-        
-
+        <section id="productos-pasteles">
+          <div class="texto-pasteles">
+            <h2>NUESTROS PASTELES</h2>
+            <p>Elige en nuestra amplia gama</p>
+          </div>
+          <div class="grid-productos contenido">
+            <article class="card 1">
+              <img src="./img/cakes-1681543_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>PASTEL DE VAINILLA</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 2">
+              <img src="./img/cherrycake-2364352_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>PASTEL DE CEREZA</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 3">
+              <img src="./img/date-of-birth-2901945_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>PASTEL ARCOIRIS</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 4">
+              <img src="./img/to-bake-1003685_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>PASTEL CON FRUTAS</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 5">
+              <img src="./img/cupcakes-1850628_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>TRIO DE CUPCAKES</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="texto-postres">
+                <h2>NUESTROS POSTRES</h2>
+                <p>Elige en nuestra amplia gama</p>
+            </article>
+            <article class="card 6">
+              <img src="./img/bowl-1932375_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>POSTRE DE HELADO</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 7">
+              <img src="./img/strawberry-dessert-2191973_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>POSTRE DE YOGURT</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 8">
+              <img src="./img/cake-1971552_1280.jpg" alt="">
+              <div class="texto-card">
+                <h3>POSTRE DE 3 LECHES RECUBIERTO</h3>
+                <p>$20.000</p>
+                <a class="boton" href="#">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+          </div>
+      
         </section>
     </main>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>

@@ -1,39 +1,48 @@
-main{
-    #carrusel{background-color: #fcdbaf;
-        width: 100%;
+@import "variables";
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+  #carrusel {
+    width: 100%;
+    background-color: #fdbf72;
+    padding: 3rem 0;
+    .contenedor-carrusel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      #texto-titulo {
         display: flex;
-        flex-direction: row;
-        padding: 5rem;
-        flex-wrap: wrap;
-        div{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            h2{
-                font-family: 'Gloria Hallelujah', cursive;
-                font-size: 3rem;
-            }
-            h1{
-                font-family: 'Bitter', serif;
-                font-size: 3rem;
-            }
-            article{
-                font-family: 'Bitter', serif;
-                font-size: 1.2rem;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                    img{
-                        padding-right: 10px;
-                    }
-                    div{
-                        padding-left: 20px;
-                        p{
-                            padding-top: 30px;
-                            padding-left: 60px;
-                        }
-                    }               
-            }
+        flex-direction: column;
+        font-family: $fuenteNormal;
+        font-size: 2.2rem;
+        h2 {
+          font-family: $fuenteEspecial;
         }
+        #imagen-descripcion {
+          font-size: 1.3rem;
+          display: flex;
+          img {
+            width: 100px;
+            height: 100px;
+            margin: 40px 40px 0 0;
+          }
+          #descripcion{
+            margin-top: 20px;
+            p{
+                margin: 40px 0 0 60px;
+            }
+          }
+        }
+      }
     }
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+.contenido {
+  max-width: 1300px;
+  margin: 0 auto;
 }
