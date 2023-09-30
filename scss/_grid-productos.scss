@@ -13,12 +13,13 @@
   .grid-productos {
     font-family: $fuenteNormal;
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: repeat(3, 31%);
     justify-content: space-between;
-    row-gap: 30px;
+    grid-gap: 2rem;
+    
     .texto-postres{
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column: 1/4;
+        
         text-align: center;
         margin: 2rem;
         h2{

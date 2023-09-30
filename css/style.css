@@ -8,7 +8,6 @@ header nav {
   background-color: white;
   display: flex;
   padding: 8px;
-  padding-inline: 30px;
   align-items: center;
   justify-content: space-between;
 }
@@ -95,13 +94,12 @@ main #carrusel img {
 #productos-pasteles .grid-productos {
   font-family: "Bitter", serif;
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: repeat(3, 31%);
   justify-content: space-between;
-  row-gap: 30px;
+  grid-gap: 2rem;
 }
 #productos-pasteles .grid-productos .texto-postres {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column: 1/4;
   text-align: center;
   margin: 2rem;
 }
