@@ -7,6 +7,11 @@ let arregloLista = [];
 function cargarListener() {
   listaProductos.addEventListener("click", agregarProducto);
   carrito.addEventListener("click", borrarProducto);
+  document.addEventListener("DOMContentLoaded", ()=>{
+    arregloLista = JSON.parse(localStorage.getItem('carrito'))|| [];
+    carritoHTML();
+  })
+
   vaciarCarritoBtn.addEventListener("click", ()=>{
     arregloLista = [];
     limpiarHTML();
@@ -19,7 +24,6 @@ const agregarProducto = (e) => {
         const productoSeleccionado = e.target.parentElement.parentElement;
         
         leerDatos(productoSeleccionado);
-
     }
 };
 
@@ -58,7 +62,6 @@ const leerDatos = (producto) => {
       arregloLista = [...arregloLista, infoProducto];
   }
 
-  console.log(arregloLista);
   carritoHTML();
 };
 
@@ -88,7 +91,14 @@ const carritoHTML = () => {
 
     contenedorCarrito.appendChild(row);
   });
+
+  sincronizarStorage();
+
 };
+
+const sincronizarStorage =()=>{
+    localStorage.setItem('carrito', JSON.stringify(arregloLista))
+}
 
 const limpiarHTML = () => {
   while (contenedorCarrito.firstChild) {
