@@ -27,8 +27,54 @@ header nav ul li {
   font-family: "Bitter", serif;
   font-size: 1.5rem;
 }
-header nav #carrito {
+header nav .carrito-compras {
   margin-left: 120px;
+}
+header nav .carrito-compras .tabla-carrito {
+  display: none;
+}
+header nav .carrito-compras:hover .tabla-carrito {
+  min-height: 300px;
+  font-family: "Bitter", serif;
+  background-color: white;
+  position: absolute;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav .carrito-compras:hover .tabla-carrito table {
+  margin: 10px;
+  text-indent: initial;
+}
+header nav .carrito-compras:hover .tabla-carrito table th {
+  padding: 30px 0.5rem 0;
+}
+header nav .carrito-compras:hover .tabla-carrito table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+}
+header nav .carrito-compras:hover .tabla-carrito table tbody tr td {
+  padding: 0 7px;
+  border-bottom: 1px solid #d7d7d7;
+}
+header nav .carrito-compras:hover .tabla-carrito .button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 2px 7rem;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  margin: 20px 0 15px 0;
+}
+
+.borrar-boton {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 main {
